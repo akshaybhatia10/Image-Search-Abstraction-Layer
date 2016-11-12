@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/akshaybhatia10/Image-Search-Abstraction-Layer/issues"
   },
-  "homepage": "https://github.com/akshaybhatia10/Image-Search-Abstraction-Layer#readme"
+  "homepage": "https://github.com/akshaybhatia10/Image-Search-Abstraction-Layer#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
 }
