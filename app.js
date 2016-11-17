@@ -8,10 +8,10 @@ var express = require("express"),
 mongoose.Promise = global.Promise;
 
 //for local development
-mongoose.connect("mongodb://localhost/imagesearch");
+//mongoose.connect("mongodb://localhost/imagesearch");
 
 //on mongo lab
-//mongoose.connect("mongodb://image-search-api:image-search-api@ds157247.mlab.com:57247/image-search-api");
+mongoose.connect("mongodb://image-search-api:image-search-api@ds157247.mlab.com:57247/image-search-api");
    
 var search = new bingSearch("B19fx6nXcipELSH4uCwxcdxKHhhogPZx4HydA4bcUqc");
     
