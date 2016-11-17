@@ -44,4 +44,33 @@ app.get("/search/:query",function(req,res){
 
 });
 
+app.get("/latest",function(req, res) {
+    Latest.find({},{"limit":10,
+                    "sort":{
+                        "when":-1
+                    }
+                },function(err,data){
+    if(err){
+        console.log(err);
+    }else{
+        res.json({
+            data
+            //term: data.query
+            //when: data.created
+            });
+    }
+        });
+
+});  
+
+// function show(text){
+//     return {
+         
+//             url : text.url,
+//             snippet : text.title,
+//             thumbnail : text.thumbnail.url,
+//             context : text.sourceUrl 
+//     }
+// }
+
 app.listen(process.env.PORT, process.env.IP);
